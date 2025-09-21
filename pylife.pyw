@@ -6,7 +6,7 @@ import engine
 
 pygame.init()
 SCALE = 1
-RESOLUTION = np.subtract(pygame.display.get_desktop_sizes()[0], (100,100))
+RESOLUTION = np.divide(np.subtract(pygame.display.get_desktop_sizes()[0], (100,100)), SCALE).astype(np.int64)
 screen = pygame.display.set_mode(RESOLUTION, pygame.SCALED)
 pygame.event.set_blocked(None)
 pygame.event.set_allowed([pygame.KEYDOWN, pygame.QUIT, pygame.MOUSEBUTTONDOWN, pygame.MOUSEBUTTONUP, pygame.VIDEORESIZE])

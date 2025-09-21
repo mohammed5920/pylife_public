@@ -1,5 +1,7 @@
 # Game of Life (Pygame + Numba)
 
+![Demo](demo.gif "Preview")
+
 Conway’s Game of Life written in Python, using  
 - **Pygame** for rendering & interaction  
 - **Numba** for fast simulation  
